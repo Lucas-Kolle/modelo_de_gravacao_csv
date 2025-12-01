@@ -23,7 +23,7 @@ public class ContatosApp {
         c1.telefone = sc.nextLine();
 
         ContatoRepository cr = new ContatoRepository();
-        
+
         cr.contato = c1;
         cr.gravar();
         cr.listarContatos();

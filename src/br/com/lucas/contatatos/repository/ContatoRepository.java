@@ -29,6 +29,11 @@ public class ContatoRepository {
             List <String> contatos =  Files.readAllLines(arquivo);
             int contador = 0;
             while (contador < contatos.size()) {
+                String[] linhasContatos = contatos.get(contador).split(";");
+                System.out.println("Nome: "  + linhasContatos[1]);
+                System.out.println("Telefone: "  + linhasContatos[2]);
+                System.out.println("Email: "  + linhasContatos[3]);
+                System.out.println("---------------------------------------------------");
                 System.out.println(contatos.get(contador));
                 contador++;
 
